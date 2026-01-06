@@ -1,0 +1,56 @@
+{
+  "name": "structify",
+  "version": "1.0.0",
+  "description": "AI-powered data extraction library - normalize messy text into structured JSON",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"Tests to be implemented\" && exit 0"
+  },
+  "keywords": [
+    "ai",
+    "extraction",
+    "data-normalization",
+    "openrouter",
+    "schema",
+    "json",
+    "typescript",
+    "developer-tools",
+    "ocr",
+    "text-processing"
+  ],
+  "author": "Bobi Gunardi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibobgunardi/structify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ibobgunardi/structify/issues"
+  },
+  "homepage": "https://github.com/ibobgunardi/structify#readme",
+  "dependencies": {
+    "openai": "^4.77.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "dotenv": "^16.4.7",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
